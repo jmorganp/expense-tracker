@@ -31,10 +31,42 @@ from main import Expense, ExpenseDatabase
 ### Then initialize them as follows:
 
 ```python
-expense_db = ExpenseDatabase()
+expense_db = ExpenseDatabase() # create an expense database instance
 monthly_expense = Expense('Altschool Tuition (Monthly)', 30.0)
 ```
-### Or for convenience, just run the following in the terminal (to see how it works) ⚡:
+
+### To add the sample expense to the database:
+```python
+expense_db.add_expense(monthly_expense)
+```
+
+### To update the title & amount of the expense:
+```python
+monthly_expense.update(title='Altschool Tuition (Monthly) (10% off)', amount=27.0)
+```
+
+### You can perform the following operations on the Expense Database:
+## expense retrieval by id (UUID):
+```python
+expense = expense_db.get_expense_by_id('607bd6a6-7838-414f-846b-0eb76d4504f9')
+```
+
+## expense retrieval by title:
+```python
+expense = expense_db.get_expense_by_title('Altschool Tuition (Monthly)')
+```
+
+## expense removal (by id):
+```python
+expense_db.remove_expense('607bd6a6-7838-414f-846b-0eb76d4504f9')
+```
+
+## get expenses as a list of dictionaries:
+```python
+expense_dict = expense_db.to_dict()
+```
+
+### Or for convenience, just run the following in the terminal ⚡:
 ```
 python main.py
 ```
