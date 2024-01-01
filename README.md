@@ -5,15 +5,15 @@ An implementation of 'Expense' and 'ExpenseDatabase' python classes, to model an
 
 ### Expense 💳:
 Represents an individual financial expense with the following attributes:
-- id (str): A unique identifier generated as a UUID string.
-- title (str): A string representing the title of the expense.
-- amount (float): A float representing the amount of the expense.
-- created_at (str): A timestamp indicating when the expense was created.
-- updated_at (str): A timestamp indicating the last time the expense was updated.
+- `id` (str): A unique identifier generated as a UUID string.
+- `title` (str): A string representing the title of the expense.
+- `amount` (float): A float representing the amount of the expense.
+- `created_at` (str): A timestamp indicating when the expense was created.
+- `updated_at` (str): A timestamp indicating the last time the expense was updated.
 
 ### ExpenseDatabase 💳💾:
 Manages a collection of Expense objects, and has the following attribute:
-- expenses (list): A list storing Expense instances.
+- `expenses` (list): A list storing Expense instances.
 
 ## Cloning 👯:
 ```
