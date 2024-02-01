@@ -1,4 +1,4 @@
-# Alt-de-project-3 💻
+# Expense Tracker 💻
 
 ## Description ℹ️:
 An implementation of 'Expense' and 'ExpenseDatabase' python classes, to model and manage financial expenses.
